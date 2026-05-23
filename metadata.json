@@ -1,0 +1,6 @@
+{
+  "name": "Twój Bar Domowe Obiady",
+  "description": "Profesjonalna i przytulna strona internetowa dla baru z domowymi obiadami w Szczecinie przy Jasnej 1.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
