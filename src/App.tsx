@@ -122,16 +122,16 @@ export default function App() {
 
       {/* Navigation Header */}
       <header id="navbar" className="sticky top-0 z-40 bg-[#fcfbfa]/80 backdrop-blur-md border-b border-[#f1efe8]">
-        <div className="max-w-[1200px] mx-auto px-6 py-5 flex justify-between items-center">
-          <a href="#hero" className="flex items-center gap-4 group">
+        <div className="max-w-[1200px] mx-auto px-4 py-3 md:px-6 md:py-4 flex justify-between items-center gap-3">
+          <a href="#hero" className="flex items-center gap-2 md:gap-4 group shrink-0">
             <img 
               src={RESTAURANT_INFO.logoUrl} 
               alt={RESTAURANT_INFO.name} 
               referrerPolicy="no-referrer"
-              className="w-10 h-10 rounded-full object-cover filter brightness-95 contrast-105" 
+              className="w-8 h-8 md:w-10 md:h-10 rounded-full object-cover filter brightness-95 contrast-105" 
             />
             <div>
-              <span className="block text-lg font-bold font-serif tracking-tight text-[#111d15]">
+              <span className="block text-base md:text-lg font-bold font-serif tracking-tight text-[#111d15] whitespace-nowrap">
                 {RESTAURANT_INFO.name}
               </span>
             </div>
@@ -144,12 +144,12 @@ export default function App() {
             <a href="#kontakt" className="text-[#111d15]/80 hover:text-[#bd6944] duration-150">Kontakt</a>
           </div>
 
-          <div className="flex items-center gap-5">
+          <div className="flex items-center gap-2 md:gap-5 shrink-0">
             <a 
               href={RESTAURANT_INFO.facebookUrl} 
               target="_blank" 
               rel="noopener noreferrer" 
-              className="text-[#111d15] hover:text-[#bd6944] duration-150"
+              className="text-[#111d15] hover:text-[#bd6944] duration-150 p-1"
               title="Odwiedź nas na Facebooku"
               id="fb-nav-btn"
             >
@@ -158,10 +158,10 @@ export default function App() {
 
             <a 
               href={`tel:${RESTAURANT_INFO.phoneRaw}`} 
-              className="text-[10px] font-bold tracking-[0.15em] uppercase py-3 px-6 bg-[#111d15] text-[#fcfbfa] hover:bg-[#bd6944] transition-colors duration-200"
+              className="text-[9px] md:text-[10px] font-bold tracking-[0.1em] md:tracking-[0.15em] uppercase py-2 px-3 md:py-3 md:px-6 bg-[#111d15] text-[#fcfbfa] hover:bg-[#bd6944] transition-colors duration-200 whitespace-nowrap"
               id="contact-nav-btn"
             >
-              Telefon: {RESTAURANT_INFO.phone}
+              Tel: {RESTAURANT_INFO.phone}
             </a>
           </div>
         </div>
