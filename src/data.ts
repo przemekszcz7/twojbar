@@ -23,7 +23,7 @@ export interface Review {
 }
 
 export const RESTAURANT_INFO = {
-  name: "Twój Bar Domowe Obiady",
+  name: "Twój Bar",
   address: "Jasna 1, Szczecin",
   addressPostal: "70-777 Szczecin",
   phone: "789 203 809",
